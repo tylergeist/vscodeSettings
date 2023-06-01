@@ -172,6 +172,14 @@
     {
       "before": ["<leader>", "z"],
       "commands": ["workbench.action.moveEditorToPreviousGroup"]
+    },
+    {
+      "before": ["<leader>", "g", "d"],
+      "commands": ["editor.action.peekDefinition"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
     }
   ],
 
@@ -207,5 +215,7 @@
       "editorInlayHint.background": "#3d3d3d48"
     }
   },
-  "cSpell.languageSettings": []
+  "cSpell.languageSettings": [],
+  "cSpell.customDictionaries": {},
+  "highlight-matching-tag.styles": "border: 1px solid rgba(255, 255, 255, 0.3);"
 }
