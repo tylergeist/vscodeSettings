@@ -39,7 +39,6 @@
   "eps-preview.path.pdf2svg": "pdf2svg",
   "editor.fontSize": 16,
   "editor.inlineSuggest.enabled": true,
-  "workbench.colorTheme": "Eva Dark",
   "explorer.confirmDelete": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "better-comments.tags": [
@@ -118,6 +117,26 @@
     {
       "before": ["<C-u>"],
       "after": ["<C-u>", "z", "z"]
+    },
+    {
+      "before": ["d"],
+      "after": ["\"", "_", "d"]
+    },
+    {
+      "before": ["D"],
+      "after": ["\"", "_", "D"]
+    },
+    {
+      "before": ["d", "d"],
+      "after": ["\"", "_", "d", "d"]
+    },
+    {
+      "before": ["<leader>", "r"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.showHover"]
     }
   ],
 
@@ -130,7 +149,11 @@
 
   "vim.normalModeKeyBindings": [
     {
-      "before": ["<leader>", "a"],
+      "before": ["<C-c>"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["<leader>", "h"],
       "commands": ["vscode-harpoon.addEditor"]
     },
     {
@@ -178,8 +201,8 @@
       "commands": ["editor.action.peekDefinition"]
     },
     {
-      "before": ["<leader>", "c", "a"],
-      "commands": ["editor.action.quickFix"]
+      "before": ["<leader>", "<leader>"],
+      "after": ["z", "z"]
     }
   ],
 
@@ -191,6 +214,18 @@
     {
       "before": ["K"],
       "commands": ["editor.action.moveLinesUpAction"]
+    },
+    {
+      "before": ["d"],
+      "after": ["\"", "_", "d"]
+    },
+    {
+      "before": ["D"],
+      "after": ["\"", "_", "D"]
+    },
+    {
+      "before": ["d", "d"],
+      "after": ["\"", "_", "d", "d"]
     }
   ],
 
@@ -209,12 +244,21 @@
     "python": false,
     "rust": false
   },
- "workbench.colorCustomizations": {
+  "workbench.colorCustomizations": {
     "editorInlayHint.foreground": "#adadadf0",
     "editorInlayHint.background": "#3d3d3d48",
     "editorCursor.foreground": "#786f86"
   },
   "cSpell.languageSettings": [],
   "cSpell.customDictionaries": {},
-  "highlight-matching-tag.styles": "border: 1px solid rgba(255, 255, 255, 0.3);"
+  "highlight-matching-tag.styles": "border: 1px solid rgba(255, 255, 255, 0.3);",
+  "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "oneDarkPro.color": {
+    "coral": "#d19a66",
+    "fountainBlue": "#61afef",
+    "malibu": "#56b6c2",
+    "whiskey": "#e06c75"
+  },
+  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB"
 }
