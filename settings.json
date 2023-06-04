@@ -130,6 +130,7 @@
       "before": ["d", "d"],
       "after": ["\"", "_", "d", "d"]
     },
+
     {
       "before": ["<leader>", "r"],
       "commands": ["editor.action.rename"]
@@ -137,6 +138,24 @@
     {
       "before": ["<leader>", "c", "a"],
       "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["<leader>", "y"],
+      "commands": [
+        {
+          "command": "editor.action.clipboardCopyAction",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "commands": [
+        {
+          "command": "editor.action.clipboardCutAction",
+          "args": []
+        }
+      ]
     }
   ],
 
@@ -226,6 +245,24 @@
     {
       "before": ["d", "d"],
       "after": ["\"", "_", "d", "d"]
+    },
+    {
+      "before": ["<leader>", "y"],
+      "commands": [
+        {
+          "command": "editor.action.clipboardCopyAction",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "commands": [
+        {
+          "command": "editor.action.clipboardCutAction",
+          "args": []
+        }
+      ]
     }
   ],
 
@@ -260,5 +297,6 @@
     "malibu": "#56b6c2",
     "whiskey": "#e06c75"
   },
-  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB"
+  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+  "oneDarkPro.editorTheme": "One Dark Pro Darker"
 }
